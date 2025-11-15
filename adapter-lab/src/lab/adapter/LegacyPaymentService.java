@@ -13,12 +13,15 @@ this.merchantId = merchantId;
 */
 public void makePayment(int cents) {
 // Simulate some legacy behavior and print to stdout
-System.out.println("[LegacyPaymentService] Merchant: " + merchantId
-
-P a g e | 3
-
-+ " | Payment received: " + cents + " cents");
+System.out.println("[LegacyPaymentService] Merchant: " + merchantId+ " | Payment received: " + cents + " cents");
 // Pretend some internal checks happen here...
 System.out.println("[LegacyPaymentService] Status: PAYMENT_OK");
+}
+
+public void redundPayment(int cents) {
+// Simulate some legacy behavior and print to stdout
+System.out.println("[LegacyPaymentService] Merchant: " + merchantId+ " | Refund Processed: " + cents + " cents");
+// Pretend some internal checks happen here...
+System.out.println("[LegacyPaymentService] Status: Refund_OK");
 }
 }
